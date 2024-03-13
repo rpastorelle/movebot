@@ -71,6 +71,7 @@ function App() {
           <div
             key={cellIndex}
             className="cell"
+            data-testid={`cell-${rowIndex}-${cellIndex}`}
             onClick={() => setCoordinates({ x: rowIndex, y: cellIndex })}
           >
             {coordinates.x === rowIndex && coordinates.y === cellIndex ? '🤖' : ' '}
