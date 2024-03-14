@@ -62,7 +62,7 @@ function App() {
     };
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, []);
+  }, [setCoordinates]);
 
   return (
     <div className="App">
